@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+    <h1 onmouseover="funchover()" id="h1" onmouseout="funchovera()">hai</h1>
+    <p id="p">hallo</p>
   </body>
+  <script>
+    const elh1 = document.getElementById("h1")
+    const elp = document.getElementById("p")
+    const funchover = ()=> {
+      elh1.style.opacity = 0;
+      elp.style.opacity = 1;
+    }
+    const funchovera = ()=> {
+      elh1.style.opacity = 1;
+      elp.style.opacity = 0;
+    }
+    
+  </script>
 </html>
